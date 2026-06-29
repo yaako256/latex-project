@@ -1,0 +1,15 @@
+# .dockerignore
+# ========================================
+# Docker build contextから除外するもの
+# ========================================
+
+# git関連
+.git
+.gitignore
+
+
+# Local data
+.env
+
+# Editor
+.vscode

@@ -1,0 +1,10 @@
+
+# データの中身は管理させない
+src/*
+
+# テストデータは公開しておく
+!_latex_test
+
+# Environment Variables (Security) ---
+# 秘密鍵やAPIキーを含む可能性があるため絶対にコミットしない
+.env

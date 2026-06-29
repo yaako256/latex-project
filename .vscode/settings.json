@@ -1,0 +1,25 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "docker",
+      // コンテナ外から叩くため、変更する
+      "command": "docker",
+      "args": [
+        // コンテナの中に入る
+        "compose", "exec", "latex",
+        // latex command
+        "latexmk",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%RELATIVE_DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "docker",
+      "tools": ["docker"]
+    }
+  ]
+}
