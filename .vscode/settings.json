@@ -11,6 +11,8 @@
         "latexmk",
         // .texがあるディレクトリを作業ディレクトリにする
         "-cd",
+        "-auxdir=trash",
+        "-outdir=.",
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
