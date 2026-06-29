@@ -11,23 +11,11 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      #args:
-      #  USERNAME: $(USERNAME)
-      # target: dev
-
-    # ビルドされたイメージのタグ
-    # 今回は個人ようなのでimage名を変更しない
-    # image: ${HOST_NAME}/${SERVICE_NAME}:${VERSION}
     
     volumes:
       - .:/work
 
     working_dir: /work
-
-    # ボリュームマウント
-    #volumes:
-    #  - ./src:/home/texlive/src
-      #- ./.vscode-server:/home/texlive/.vscode-server
     
     command: >
       bash

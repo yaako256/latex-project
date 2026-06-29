@@ -9,9 +9,13 @@
         "compose", "exec", "latex",
         // latex command
         "latexmk",
+        // .texがあるディレクトリを作業ディレクトリにする
+        "-cd",
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
+        // .texがあるディレクトリを相対パスで指定
+        // Dockerを使っているので絶対パスはよろしくない。
         "%RELATIVE_DOC%"
       ]
     }

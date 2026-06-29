@@ -8,3 +8,11 @@ src/*
 # Environment Variables (Security) ---
 # 秘密鍵やAPIキーを含む可能性があるため絶対にコミットしない
 .env
+
+# Latexのゴミを除外
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.dvi
