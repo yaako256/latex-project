@@ -4,9 +4,10 @@
 [![LaTeX](https://img.shields.io/badge/LaTeX-TeXLive-008080.svg?logo=latex)](https://www.latex-project.org/)
 
 ## 概要
+LaTexで文書作成ができる環境構築をせねばならなくなった。  
 どうやらLaTexすらDockerにできるらしい。  
-そこで、VSCodeでRemoteSSHを使って外から編集もできるような文書作成環境を作ろうというプロジェクトである。  
-VSCodeの拡張機能である`LaTeX Workshop`を使った、プレビューも表示しながら文書作成ができる、ストレスフリーな環境を目標にした。
+そこで、VSCodeでRemoteSSHを使って外から編集もできるようなLaTex文書作成環境を作ろうというプロジェクトである。  
+VSCodeの拡張機能である`LaTeX Workshop`を使った、プレビューも表示しながら文書作成ができる、ストレスフリーな環境を目標に環境構築をした。
 
 ---
 ## クイックスタート
