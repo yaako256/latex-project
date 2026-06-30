@@ -2,6 +2,7 @@
 # settings.jsonでlatexのbuildを補助するためのスクリプト
 
 # latexのビルド
+# 詳しい処理はREADME参照
 latexmk \
     -cd \
     -auxdir=trash \

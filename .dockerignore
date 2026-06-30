@@ -7,9 +7,17 @@
 .git
 .gitignore
 
-
 # Local data
 .env
 
 # Editor
 .vscode
+
+# docker設定など
+Dockerfile
+compose.yaml
+compose.*.yaml
+
+
+# その他補助ファイル
+Makefile

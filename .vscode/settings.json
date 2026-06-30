@@ -1,13 +1,16 @@
 {
   "latex-workshop.latex.tools": [
     {
+      // ツール名設定
       "name": "docker",
       // コンテナ外から叩くため、変更する
       "command": "docker",
       "args": [
         // コンテナの中に入る
         "compose", "exec", "latex",
+        // ビルド補助用シェルスクリプト起動
         "scripts/build_latex.sh",
+        // 相対パスを引数として渡す
         "%RELATIVE_DOC%"
       ]
     }
