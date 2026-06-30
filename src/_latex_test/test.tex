@@ -51,8 +51,20 @@
 \caption{ダブル台風のキャラクター（いらすとやより）}
 \end{figure}
 
-なお、コンパイル時に「ICCプロファイルのチェックサム不一致」という警告（Dvipdfmxによるビックリマークマークの警告）が出ることがある。これは実害はないため無視してよい。
+なお、コンパイル時に「ICCプロファイルのチェックサム不一致」という警告（Dvipdfmxによるビックリマークマークの警告）が出ることがある。
+これは実害はないため無視してよい。
 
+とはいえうざい。
+ICCプロファイルを消す方法はいろいろあるが、pythonを使う方法を紹介する。
+この3行だけで消せて便利である。
+
+\begin{quote}
+\begin{verbatim}
+from PIL import Image
+img = Image.open("sample.png")
+img.save("sample.png", icc_profile=None)
+\end{verbatim}
+\end{quote}
 
 \section{基本手順}
 
