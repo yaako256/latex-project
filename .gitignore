@@ -4,6 +4,8 @@ src/*
 
 # テストデータは公開しておく
 !_latex_test
+# テストデータの出力pdfは除外
+src/_latex_test/test.pdf
 
 #  設定フォルダ(文書テンプレートフォルダ)
 config/*
