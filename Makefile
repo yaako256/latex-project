@@ -2,17 +2,29 @@
 # ==========================================
 ### メイン
 # ==========================================
-.PHONY: up
+.PHONY: up stop down no-cache ps shell
 
 ## コンテナ起動
 up:
 	docker compose up
 
-# 起動中のコンテナを確認
+## コンテナ停止
+stop:
+	docker compose stop
+
+## コンテナdown
+down:
+	docker compose down
+
+## キャッシュなしビルド
+no-cache:
+	docker compose build --no-cache
+
+## 起動中のコンテナを確認
 ps:
 	docker compose ps
 
-# コンテナに入る
+## コンテナに入る
 shell:
 	docker compose exec latex bash
 

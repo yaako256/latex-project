@@ -14,7 +14,8 @@ services:
     
     volumes:
       - .:/work
-
+      # ビルド補助スクリプトをルートにマウント
+      #- ./scripts/build_latex.sh:/work/build_latex.sh
     working_dir: /work
     
     command: >

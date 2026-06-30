@@ -7,17 +7,7 @@
       "args": [
         // コンテナの中に入る
         "compose", "exec", "latex",
-        // latex command
-        "latexmk",
-        // .texがあるディレクトリを作業ディレクトリにする
-        "-cd",
-        "-auxdir=trash",
-        "-outdir=.",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        // .texがあるディレクトリを相対パスで指定
-        // Dockerを使っているので絶対パスはよろしくない。
+        "scripts/build_latex.sh",
         "%RELATIVE_DOC%"
       ]
     }
