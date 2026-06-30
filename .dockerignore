@@ -21,3 +21,5 @@ compose.*.yaml
 
 # その他補助ファイル
 Makefile
+README.md
+todo.md

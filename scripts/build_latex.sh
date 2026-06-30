@@ -18,3 +18,6 @@ cd "$(dirname "$1")"
 # trashフォルダに入らないものを移動
 mv -f *.dvi trash/ 2>/dev/null || true
 mv -f *.synctex.gz trash/ 2>/dev/null || true
+
+# trashフォルダの削除
+rm -rf trash
