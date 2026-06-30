@@ -5,6 +5,10 @@ src/*
 # テストデータは公開しておく
 !_latex_test
 
+#  設定フォルダ(文書テンプレートフォルダ)
+config/*
+!config/.keep
+
 # Environment Variables (Security) ---
 # 秘密鍵やAPIキーを含む可能性があるため絶対にコミットしない
 .env

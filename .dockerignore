@@ -1,25 +1,17 @@
 # .dockerignore
 # ========================================
 # Docker build contextから除外するもの
+# ビルド時に不要 && 重たそうなものを除外する
 # ========================================
 
-# git関連
+# git履歴
 .git
-.gitignore
 
-# Local data
-.env
-
-# Editor
+# editor
 .vscode
 
-# docker設定など
-Dockerfile
-compose.yaml
-compose.*.yaml
+# latex作成環境
+src
 
-
-# その他補助ファイル
-Makefile
-README.md
-todo.md
+# 設定フォルダ(文書テンプレートフォルダ)
+config
