@@ -1,19 +1,15 @@
-
-# データの中身は管理させない
+# 文書の中身は管理させない
 src/*
 
-# テストデータは公開しておく
+# --- サンプル文書 ---
+# サンプルtexは公開しておく
 !_latex_test
-# テストデータの出力pdfは除外
+# 出力pdfは除外
 src/_latex_test/test.pdf
 
 #  設定フォルダ(文書テンプレートフォルダ)
 config/*
 !config/.keep
-
-# Environment Variables (Security) ---
-# 秘密鍵やAPIキーを含む可能性があるため絶対にコミットしない
-.env
 
 # LaTexのゴミを除外
 *.aux
