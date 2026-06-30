@@ -1,8 +1,9 @@
 #!/bin/sh
 # build_latex.sh
-# settings.jsonでlatexのbuildをする時の補助スクリプト
+# settings.jsonでLaTexのbuildをする時の補助スクリプト
 
 # エラー時に強制終了させる
+# 確認用にビルド副産物を残す
 set -e
 
 # $1が未指定の時のエラーハンドリング(予防)
@@ -11,9 +12,9 @@ set -e
 # 使用文字列を予め定数化
 target_dir=$(dirname "$1")
 target_base=$(basename "$1" .tex)
-aux_dir=".latexmk-cache"
+aux_dir=".LaTexmk-cache"
 
-# latexのビルド
+# LaTexのビルド
 #
 # 各パラメータ:
 #   -cd: 対象ファイルのフォルダをカレントディレクトリとする

@@ -13,7 +13,7 @@ config/*
 # 秘密鍵やAPIキーを含む可能性があるため絶対にコミットしない
 .env
 
-# Latexのゴミを除外
+# LaTexのゴミを除外
 *.aux
 *.fdb_latexmk
 *.fls

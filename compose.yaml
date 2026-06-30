@@ -1,6 +1,6 @@
 # compose.yaml
 
-name: LatexProgect
+name: LaTexProgect
 
 services:
   latex:

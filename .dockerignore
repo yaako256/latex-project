@@ -10,7 +10,7 @@
 # editor
 .vscode
 
-# latex作成環境
+# LaTex作成環境
 src
 
 # 設定フォルダ(文書テンプレートフォルダ)

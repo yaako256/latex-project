@@ -2,8 +2,11 @@
 \documentclass[dvipdfmx,a4paper,12pt]{jsarticle}
 
 % ===== パッケージ =====
+% 数式に使用
 \usepackage{amsmath,amssymb}
+% 画像(図)の挿入に使用
 \usepackage{graphicx}
+% 表の \midrule に使用
 \usepackage{booktabs}
 
 % ===== タイトル情報 =====
@@ -38,6 +41,19 @@
 % 改ページ
 \clearpage
 
+\section{画像(図)の挿入}
+
+ここでは画像の挿入をテストします。
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{sample.png}
+\caption{ダブル台風のキャラクター（いらすとやより）}
+\end{figure}
+
+なお、コンパイル時に「ICCプロファイルのチェックサム不一致」という警告（Dvipdfmxによるビックリマークマークの警告）が出ることがある。これは実害はないため無視してよい。
+
+
 \section{基本手順}
 
 \LaTeX 文書作成の基本手順は以下の通りです。
@@ -56,19 +72,29 @@
   生成されたPDFを開き、レイアウトを確認します。
 \end{enumerate}
 
+
+% 改ページ
+\clearpage
+
+
 \section{表の例}
 
-\begin{table}[h]
-\centering
-\begin{tabular}{cc}
-\toprule
-項目 & 値 \\
-\midrule
-A & 1 \\
-B & 2 \\
-\bottomrule
-\end{tabular}
+\begin{table}[ht]
+
 \caption{簡単な表の例}
+\centering
+
+\begin{tabular}{cccc}
+
+\toprule
+項目 & 値1 & 値2 & 値3 \\
+\midrule
+A & 1 & 11 & 111 \\
+B & 2 & 22 & 222 \\
+\bottomrule
+
+\end{tabular}
+
 \end{table}
 
 \end{document}
